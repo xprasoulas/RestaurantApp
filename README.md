@@ -7,4 +7,4 @@ Create a Project using template WebAPI
 
 Create Classes
 
-Use the Query files CustomersQuery | ItemsData
+Use the Query files CustomersQuery | ItemsData to insert data using 
