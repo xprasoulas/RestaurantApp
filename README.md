@@ -8,3 +8,7 @@ Create a Project using template WebAPI
 Create Classes
 
 Use the Query files CustomersQuery | ItemsData to insert data using 
+
+
+Install Node.js check using cmd and command " node -v "
+
