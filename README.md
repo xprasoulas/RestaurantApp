@@ -10,5 +10,12 @@ Create Classes
 Use the Query files CustomersQuery | ItemsData to insert data using 
 
 
-Install Node.js check using cmd and command " node -v "
+Install Node.js 
+Check using cmd and command " node -v " after installation
+Follow the instraction of the link
+https://angular.io/guide/quickstart
+Step.1
+.
+.
+Create a folder with the Angular Project
 
