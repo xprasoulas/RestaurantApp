@@ -5,20 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OrdersComponent } from './orders/orders.component';
 import { OrderComponent } from './orders/order/order.component';
-import { CustomerComponent } from './shared/customer/customer.component';
-import { ItemComponent } from './shared/item/item.component';
-import { OrderItemComponent } from './shared/order-item/order-item.component';
-import { OrderItemsComponent } from './orders/order-items/order-items.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     OrdersComponent,
-    OrderComponent,
-    CustomerComponent,
-    ItemComponent,
-    OrderItemComponent,
-    OrderItemsComponent
+    OrderComponent
+   
   ],
   imports: [
     BrowserModule,
