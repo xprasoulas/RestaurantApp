@@ -4,7 +4,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { OrderComponent } from './orders/order/order.component';
 
 const routes: Routes = [ 
-  //{path: '',redirectTo: 'order', pathMatch:'full'} //default routing
+  {path: '', redirectTo: 'order', pathMatch:'full'}, //default route
   {path: 'orders',component:OrdersComponent},
   {path:'order',children:[
     {path:'',component:OrderComponent},
