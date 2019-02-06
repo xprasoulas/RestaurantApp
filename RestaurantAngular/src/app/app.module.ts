@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OrdersComponent } from './orders/orders.component';
 import { OrderComponent } from './orders/order/order.component';
+import { OrderService } from './shared/order.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { OrderComponent } from './orders/order/order.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [OrderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
