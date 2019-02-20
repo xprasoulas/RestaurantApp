@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { OrderService } from 'src/app/shared/order.service';
 import { NgForm } from '@angular/forms';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { OrderItemsComponent } from '../order-items/order-items.component';
 
 
 @Component({
@@ -32,6 +33,6 @@ export class OrderComponent implements OnInit {
   }
 
   AddorEditItem(orderItemIndex, orderID){
-    
+    this.dialog.open(OrderItemsComponent);
   }
 }
