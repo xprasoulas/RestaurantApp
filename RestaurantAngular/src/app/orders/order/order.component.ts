@@ -25,6 +25,7 @@ export class OrderComponent implements OnInit {
       CustomerID: 0,
       PaymentMethod: '',
       GrandTotal: 0
-    }
+    };
+    this.service.orderItems = []; //initialize as a null Aray
   }
 }
