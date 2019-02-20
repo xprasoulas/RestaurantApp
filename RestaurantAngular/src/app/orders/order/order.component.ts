@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OrderService } from 'src/app/shared/order.service';
 import { NgForm } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 
 
 @Component({
@@ -10,7 +11,8 @@ import { NgForm } from '@angular/forms';
 })
 export class OrderComponent implements OnInit {
 
-  constructor(private service: OrderService) { }
+  constructor(private service: OrderService,
+    private dialog: MatDialog) { }
 
   ngOnInit() {
     this.resetForm();
@@ -29,7 +31,7 @@ export class OrderComponent implements OnInit {
     this.service.orderItems = []; //initialize as a null Aray
   }
 
-  AddorEditItem(){
+  AddorEditItem(orderItemIndex, orderID){
     
   }
 }
