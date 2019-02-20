@@ -33,7 +33,25 @@
                 <input name="GrandTotal" #GrandTotal="ngModel" [(ngModel)]="service.formData.GrandTotal" class="form-control">
         </div>
       </div>
-        
+      <!--Order Items Table-->
+      <table class="table table-border-less">
+        <thead class="thead-light">
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th></th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of service.orderItem"> //like foreach in C#
+            <td>{{item.itemName}}</td>
+            <td>{{item.Price}}</td>
+            <td>{{item.Quantity}}</td>
+            <td>{{item.Total}}</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <button type="submit" class="btn btn-dark"><i class="fa fa-database"></i>Submit</button>
   </div>
