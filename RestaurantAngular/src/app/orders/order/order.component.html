@@ -26,8 +26,12 @@
       </div>
       <div class="form-group">
         <label>GrandTotal</label>
-        <input name="GrandTotal" #GrandTotal="ngModel" [(ngModel)]="service.formData.GrandTotal" class="form-control">
+        <div class="input-group-prepend">
+          <div class="input-group-text">€</div>
+                <input name="GrandTotal" #GrandTotal="ngModel" [(ngModel)]="service.formData.GrandTotal" class="form-control">
+        </div>
       </div>
+        
     </div>
     <button type="submit" class="btn btn-dark"><i class="fa fa-database"></i>Submit</button>
   </div>
