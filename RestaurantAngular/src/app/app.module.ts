@@ -9,13 +9,14 @@ import { AppComponent } from './app.component';
 import { OrdersComponent } from './orders/orders.component';
 import { OrderComponent } from './orders/order/order.component';
 import { OrderService } from './shared/order.service';
+import { OrderItemsComponent } from './orders/order-items/order-items.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OrdersComponent,
-    OrderComponent
-   
+    OrderComponent,
+    OrderItemsComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +25,7 @@ import { OrderService } from './shared/order.service';
     BrowserAnimationsModule,
     MatDialogModule
   ],
+  entryComponents: [OrderItemsComponent],
   providers: [OrderService],
   bootstrap: [AppComponent]
 })

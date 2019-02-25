@@ -29,10 +29,15 @@ export class OrderComponent implements OnInit {
       PaymentMethod: '',
       GrandTotal: 0
     };
-    this.service.orderItems = []; //initialize as a null Aray
+    this.service.orderItems = []; 
   }
 
-  AddorEditItem(orderItemIndex, orderID){
-    this.dialog.open(OrderItemsComponent);
+  AddorEditItem(OrderItemIndex, orderID){
+    const dialogConfig = new MatDialogConfig;
+    dialogConfig.autoFocus = true;
+    dialogConfig.disableClose = true;
+    dialogConfig.width = "50%";
+    dialogConfig.data = [OrderItemIndex, orderID];
+    this.dialog.open(OrderItemsComponent, dialogConfig);
   }
 }
